@@ -7,5 +7,6 @@ manager for ~/.ssh/config file. Can add new servers to file and sort alphabetic 
 
 Для работы на MacOS требуется установка свежей версии Bash через brew.
 
-![telegram-cloud-photo-size-2-5267120426507687341-y](https://github.com/Delo-Design/Config-Manager/assets/3103677/5df16e47-ef8c-425a-b733-988df2de4c05)
 
+
+<img width="1840" alt="Снимок экрана 2024-04-20 в 13 52 35" src="https://github.com/Delo-Design/Config-Manager/assets/3103677/cc243774-67cd-4cea-b3c0-1ae7fe951ab7">
