@@ -1,6 +1,13 @@
 # Config-Manager
 manager for ~/.ssh/config file. Can add new servers to file and sort alphabetic order
 
+#### Для запуска скрипта перейдите в папку с ним и введите команду:
+`chmod +x cm.sh` дать права на выполнение скрипта
+
+`./cm.sh` запуск скрипта
+
+---
+
 Работает на MacOS, Linux и WSL Windows.
 
 Для работы на Linux и WSL Windows удалите первую строку из файла.
