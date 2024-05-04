@@ -312,6 +312,9 @@ AddServer() {
       read -e -p " " server_name
     fi
   done
+  user=
+  echo -e -n "${WHITE}Введите имя пользователя (по умолчанию — root): ${GREEN}"
+  read -e -p " " -i "root" user
   comment=${server_name}
   echo -e -n "${WHITE}Укажите комментарий для ключа:${GREEN}"
   read -e -p " " -i "$comment" comment
@@ -321,7 +324,7 @@ AddServer() {
     echo
     echo "Host ${server_name}"
     echo "  Hostname ${ip_address}"
-    echo "  User root"
+    echo "  User ${user}"
     echo "  Compression yes"
     echo "  IdentityFile ~/.ssh/${server_name}-key"
   } >>~/.ssh/config
@@ -397,9 +400,8 @@ if ((choice == 0)); then
 fi
 selected_server=${servers[${choice}]}
 echo -e "${GREEN}${selected_server}${WHITE}"
-echo "Запомните – Ctrl-D отключение от удаленного сервера."
+echo "Запомните - Ctrl-D отключение от удаленного сервера."
 if vertical_menu "current" 2 0 5 "Подключиться к ${selected_server}" "Выйти"
 then
   ssh "$selected_server"
 fi
-
